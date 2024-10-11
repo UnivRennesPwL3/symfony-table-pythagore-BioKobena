@@ -1,4 +1,10 @@
 {% extends 'base.html.twig' %}
 
-{% block content %} {{ htmlResponse }} {% endblock %}
+{% block title %}Table de pythagore{% endblock %}
 
+{% block body %}
+    <h1>Kobena Koffi Biohou Paul</h1>
+
+    {# Afficher le tableau HTML généré par la classe PythagoreUtility #}
+    {{ htmlResponse|raw }}
+{% endblock %}
